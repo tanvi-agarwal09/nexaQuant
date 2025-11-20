@@ -237,9 +237,9 @@ MIT License - Built for educational purposes at HackNYU 2025
 ## 👥 Team
 
 [Your Team Name]
-- [Team Member 1]
-- [Team Member 2]
-- [Team Member 3]
+- Tanvi Agarwal
+- Gaurav Poddar
+
 
 ## 🙏 Acknowledgments
 
