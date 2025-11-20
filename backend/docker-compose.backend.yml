@@ -1,0 +1,17 @@
+# backend/docker-compose.backend.yml
+version: "3.8"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./Dockerfile  # if you add one
+    command: uvicorn src.app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./nexaquant.db
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY}
+      - SOLANA_RPC_URL=${SOLANA_RPC_URL}
+      - SOLANA_WALLET_PRIVATE_KEY=${SOLANA_WALLET_PRIVATE_KEY}

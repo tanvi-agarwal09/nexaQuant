@@ -1,0 +1,4 @@
+# backend/src/app/api/v1/__init__.py
+from fastapi import APIRouter
+
+api_router = APIRouter()
